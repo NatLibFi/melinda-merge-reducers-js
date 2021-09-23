@@ -1,0 +1,24 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "FI-C"
+        },
+        {
+          "code": "b",
+          "value": "swe"
+        },
+        {
+          "code": "d",
+          "value": "FI-A"
+        }
+      ]
+    }
+  ]
+}

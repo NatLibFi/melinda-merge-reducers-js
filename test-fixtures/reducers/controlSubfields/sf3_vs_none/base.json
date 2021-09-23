@@ -1,0 +1,20 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "856",
+      "ind1": " ",
+      "ind2": "4",
+      "subfields": [
+        {
+          "code": "3",
+          "value": "Tiivistelmä"
+        },
+        {
+          "code": "a",
+          "value": "sisältö"
+        }
+      ]
+    }
+  ]
+}

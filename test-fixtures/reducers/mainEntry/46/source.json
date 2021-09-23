@@ -1,0 +1,32 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "Garrido, Edurne"
+        },
+        {
+          "code": "e",
+          "value": "Herausgeber"
+        },
+        {
+          "code": "4",
+          "value": "edt"
+        },
+        {
+          "code": "0",
+          "value": "(DE-588)1219607479"
+        },
+        {
+          "code": "0",
+          "value": "(DE-XXXX)99999"
+        }
+      ]
+    }
+  ]
+}

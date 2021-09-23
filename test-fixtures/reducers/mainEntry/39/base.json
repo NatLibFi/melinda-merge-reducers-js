@@ -1,0 +1,36 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "700",
+      "ind1": "1",
+      "ind2": "2",
+      "subfields": [
+        {
+          "code": "i",
+          "value": "Sisältää (teos):"
+        },
+        {
+          "code": "a",
+          "value": "Eurenius, Jacobus Abrahami,"
+        },
+        {
+          "code": "d",
+          "value": "1625-1714,"
+        },
+        {
+          "code": "e",
+          "value": "kirjoittaja."
+        },
+        {
+          "code": "t",
+          "value": "Wald."
+        },
+        {
+          "code": "0",
+          "value": "(FIN11)000097035"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "830",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "Turun kauppakorkeakoulun julkaisuja"
+        },
+        {
+          "code": "n",
+          "value": "Sarja A,"
+        },
+        {
+          "code": "x",
+          "value": "1459-4870"
+        },
+        {
+          "code": "v",
+          "value": "2:2009"
+        }
+      ]
+    },
+    {
+      "tag": "830",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "Turun yliopiston julkaisuja"
+        },
+        {
+          "code": "n",
+          "value": "Sarja B,"
+        },
+        {
+          "code": "v",
+          "value": "2:2019"
+        }
+      ]
+    }
+  ]
+}

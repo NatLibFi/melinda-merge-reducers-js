@@ -1,0 +1,35 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "LORUM IPSUM"
+        },
+        {
+          "code": "z",
+          "value": "virh. koodi"
+        }
+      ]
+    },
+    {
+      "tag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "012345678X"
+        },
+        {
+          "code": "z",
+          "value": "0123456789"
+        }
+      ]
+    }
+  ]
+}

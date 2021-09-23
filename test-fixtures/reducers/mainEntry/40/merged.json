@@ -1,0 +1,67 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "700",
+      "ind1": "1",
+      "ind2": "2",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "Sibelius, Jean,"
+        },
+        {
+          "code": "d",
+          "value": "1865-1957,"
+        },
+        {
+          "code": "e",
+          "value": "säveltäjä."
+        },
+        {
+          "code": "t",
+          "value": "Kevätlaulu,"
+        },
+        {
+          "code": "n",
+          "value": "op. 16"
+        },
+        {
+          "code": "s",
+          "value": "(1894)"
+        }
+      ]
+    },
+    {
+      "tag": "700",
+      "ind1": "1",
+      "ind2": "2",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "Sibelius, Jean,"
+        },
+        {
+          "code": "d",
+          "value": "1865-1957,"
+        },
+        {
+          "code": "e",
+          "value": "säveltäjä."
+        },
+        {
+          "code": "t",
+          "value": "Kevätlaulu,"
+        },
+        {
+          "code": "n",
+          "value": "op. 16"
+        },
+        {
+          "code": "s",
+          "value": "(1902)"
+        }
+      ]
+    }
+  ]
+}

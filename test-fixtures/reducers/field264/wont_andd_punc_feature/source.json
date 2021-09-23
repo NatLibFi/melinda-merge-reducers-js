@@ -1,0 +1,24 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "264",
+      "ind1": " ",
+      "ind2": "1",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "Helsinki :"
+        },
+        {
+          "code": "b",
+          "value": "C:stä puuttuu loppupiste, jota ei tarkoituksella lisätä,"
+        },
+        {
+          "code": "c",
+          "value": "2021"
+        }
+      ]
+    }
+  ]
+}

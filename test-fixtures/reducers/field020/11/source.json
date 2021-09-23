@@ -1,0 +1,66 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "951-861-386-8"
+        },
+        {
+          "code": "q",
+          "value": "020_q1_source"
+        },
+        {
+          "code": "q",
+          "value": "020_q2_source"
+        }
+      ]
+    },
+    {
+      "tag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "951-861-386-9"
+        },
+        {
+          "code": "q",
+          "value": "sidottu"
+        },
+        {
+          "code": "q",
+          "value": "Tampereen kaupunginmuseo"
+        },
+        {
+          "code": "q",
+          "value": "Joku TestiArvo &!Tähän"
+        },
+        {
+          "code": "c",
+          "value": "10 €"
+        }
+      ]
+    },
+    {
+      "tag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "951-861-386-7"
+        },
+        {
+          "code": "q",
+          "value": "020_q3_source"
+        }
+      ]
+    }
+  ]
+}

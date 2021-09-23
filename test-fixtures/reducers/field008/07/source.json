@@ -1,0 +1,24 @@
+{
+  "leader": "01331cam a2200349^i 4500",
+  "fields": [
+    {
+      "tag": "008",
+      "value": "200813s2020    fi |||| o     |0| 0|fin|"
+    },
+    {
+      "tag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "010a_source"
+        },
+        {
+          "code": "b",
+          "value": "010b_source"
+        }
+      ]
+    }
+  ]
+}

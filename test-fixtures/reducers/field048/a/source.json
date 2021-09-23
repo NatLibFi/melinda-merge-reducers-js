@@ -1,0 +1,42 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "048",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "alpha"
+        },
+        {
+          "code": "a",
+          "value": "beta"
+        }
+      ]
+    },
+    {
+      "tag": "048",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "beta"
+        }
+      ]
+    },
+    {
+      "tag": "048",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "gamma"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "995",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "995_a_value"
+        },
+        {
+          "code": "5",
+          "value": "ARTO"
+        }
+      ]
+    }
+  ]
+}

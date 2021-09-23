@@ -1,0 +1,24 @@
+{
+  "leader": "01331cam a22003494i 4500",
+  "fields": [
+    {
+      "tag": "245",
+      "ind1": "1",
+      "ind2": "3",
+      "subfields": [
+        {
+          "code": "a",
+          "value": "Valitut teokset"
+        },
+        {
+          "code": "b",
+          "value": "Jotain tähän"
+        },
+        {
+          "code": "c",
+          "value": "Minna Canth."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+Unit tests
+
+leader.js
+---------
+
+Test 01 :If LDR 000/06 or 07 is different, do not merge
+
+field006.js
+-----------
+
+Test 02: If Leader 000/06 is 'o' or 'p' in source, copy 006 from source to base as new field (2x)
+Test 03: If Leader 000/06 is something else, do nothing
+
+field007.js
+-----------
+
+Test 04: If 007/00-01 are different in base and source, copy 007 from source to base as new field (2x)
+Test 05: If 007/00-01 are the same, keep existing field 007 in base (2x)
+
+field008.js
+-----------
+
+Test 06: If the level code of the source record is better (smaller number), replace base field 008 with field 008 from source
+Test 07: If the level code of the base record is better or the same, keep existing 008
+Test 08: If the character positions are not the same, keep existing 008
+
+field020.js
+-----------
+
+Test 09: Copy new field from source to base record (case 1) (2x)
+Test 10: Copy subfields from source field to base field (case 2)
+Also in test 10: $8 only in base, not source, but seems to carry over into merged?
+Test 11: Both cases in the same record: copy a new field (case 1) and add subfields to an existing field (case 2)
+
+field022.js
+-----------
+
+Test 12: Copy new field from source to base record (case 1) (2x)
+Test 13: Copy subfields from source field to base field (case 2)
+Test 14: Both cases in the same record: copy a new field (case 1) and add subfields to an existing field (case 2)
+
+field024.js
+-----------
+
+Test 15: Copy new field from source to base record (case 1) (2x)
+Test 16: Copy subfields from source field to base field (case 2)
+Test 17: Both cases in the same record: copy a new field (case 1) and add subfields to an existing field (case 2)
+
+field040.js
+-----------
+
+Test 18: Copy new field from source to base record (case 1)
+Note: Test 18 base has a dummy 010 field because if fields=[], it is not a valid MarcRecord
+Test 19: Copy subfields from source field to base field (case 2)
+
+field042.js
+-----------
+
+Test 20: Copy new field from source to base record (case 1)
+Test 21: Copy subfields from source field to base field (case 2)
+
+field240.js
+-----------
+
+Test 34: Base contains 130 => keep base 240
+Test 35: Base does not contain 240 or 130 => copy 240 from source
+Note: Test base has dummy 010 because if fields = [], it is not recognized as a valid MarcRecord object
+Test 36: Base contains different 240 => keep base
+Test 37: Base 240 is subset of source 240 => copy 240 from source
+
+field245.js
+-----------
+
+Test 31: Identical fields in source and base => keep base
+Test 32: Source has more subfields => replace base with source (but keep base ind2)
+Test 33: Same number of subfields (but different content) => keep base
+
+field830.js
+-----------
+
+Test 22: Base has no 830, source has 830 with $x => copy source 830 to base (2x)
+Test 23: Base already has 830 with $x, source has different 830 with $x => keep base
+Test 24: Base has no 830, source 830 does not have $x => keep base
+Test 25: Base has 830 with no $x, source has same 830 with $x => copy source 830 to base
+Test 26: Base has 2x 830, one with $x and one without, source has both with $x => copy missing 830 with $x
+Test 27: Identical 830 in base and source => keep base
+Test 28: Source has longer 830 but no $x => keep base
+Test 29: 2x identical 830 fields in source and base in different order => keep both base fields
+
+field995.js
+-----------
+
+Test 30: Base has one $a, source has 2x different $a
+Test 31: Identical field 995 in source and base => keep base
+
+internalFields.js
+-----------------
+
+Test 01: Identical LOW, CAT, SID (2x each) --> keep base
+Test 02: Some identical, some different --> copy different from source to base
+
+mainEntry.js
+------------
+
+  // ### Keskeneräinen
+
+  // Test 01: Same 100 in both source and base => do not copy
+  // Test 02: Base has 100, source has 100 with more subfields => copy additional subfields to base 100
+  // Test 03: Base has 100, source has 110 => copy source 110 as 710 to base
+  // Test 04: Base has no 1XX/7XX, source has 110 => copy source 110 as 710 to base
+  // Test 05: Base has 100 and 710, source has same 110 as base 710 => do not copy
+  // Test 06: Base has 100 and 710, source has 110 with more subfields => copy additional subfields to base 710
+  // ### tästä eteenpäin ei tehty valmiiksi
+  // Test 07: Combine fx00 with and without $0
+  // Test 08: Combine identical fx00
+  // Test 09: Combine fx00 with identical static name subfields, $d missing from base (Punctuation change)
+  // Test 10: Combine fx00 with identical static name subfields, $d missing from source (Punctuation change)
+  // Test 11: Combine fx00 with differing $e (Punctuation change)
+  // Test 12: Combine fx00 with missing $e (Punctuation change)
+  // Test 13: Combine fx00 with missing $e, multiple $e  (Punctuation change)
+  // Test 14: Combine fx00 with $d missing year of death in base
+  // Test 15: Combine fx00 with $d missing year of death in source
+  // Test 16: Combine fx00 with $d missing year of death in base
+
+  /*
+  100/110/111/130 -kenttiä käsitellään ryhmänä niin, että ryhmä otetaan basesta.
+  Jos basessa ei ole 1xx-kenttää, mitään 1xx-kenttää ei myöskään tuoda siihen,
+  tässä tapauksessa sourcen 1xx-kenttä tuodaan baseen
+  vastaavaksi 7xx-sarjan kentäksi. (100→700, 110→710, 111→711, 130→730).
+  Samoin jos sourcessa on 'eri' 1xx-kenttä kuin basessa,
+  sourcen 1xx-kenttä tuodaan baseen vastaavaksi 7xx-sarjan kentäksi.
+  Näissä vielä toki sitten se, että jos basessa on jo 'sama' 7xx-kenttä, kentät pitää yhdistää.
+
+  100/110/111/130 ovat toisensa poissulkevia, eli tietueessa voi olla vain yksi näistä kerrallaan
+  Tietueessa voi olla 700/710/711/730-kenttiä silloinkin, jos siinä EI ole mitään 100/110/111/130-kenttiä
+  */
+
+selectLonger.js
+---------------
+
+/**
+ * These rules apply to fields:
+ * Repeatable: 033, 034, 046, 257, 300
+ * Non-repeatable: 039, 045
+ * If source field is longer, replace base field with source field
+ * Longer means fulfilling either (but not both) of these conditions:
+ *   a) Source has more subfields than base
+ * Or if source and base have the same number of subfields:
+ *   b) Subfield values in source are supersets of subfield values in base
+ * Test 01: 033 and 039: case a) (2x 033)
+ * Test 02: 033 and 039: case b) (2x 033)
+ * Test 03: 033 and 033: Two instances of the same repeatable field, one a) and one b)
+ * Test 04: 033 and 033: Same as 03 but fields are in different order
+ * Test 05: Identical 033 and 039 in source and base => keep base
+ * Test 06: Same as 05 but fields in different order => keep base
+ *  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -26,4 +26,6 @@
 *
 */
 
-// export all reducers here
+import {localReducers as MelindaReducers, localCopyReducerConfigs as MelindaCopyReducerConfigs} from './reducers';
+
+export {MelindaReducers, MelindaCopyReducerConfigs};

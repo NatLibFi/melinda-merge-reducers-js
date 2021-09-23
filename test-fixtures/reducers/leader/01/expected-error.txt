@@ -1,0 +1,1 @@
+LDR 000/06 or 07 is different in base and source

@@ -1,0 +1,21 @@
+{
+  "leader": "01331com a22003494i 4500",
+  "fields": [
+    {
+      "tag": "006",
+      "value": "006_base1"
+    },
+    {
+      "tag": "006",
+      "value": "006_base2"
+    },
+    {
+      "tag": "006",
+      "value": "006_source1"
+    },
+    {
+      "tag": "006",
+      "value": "006_source2"
+    }
+  ]
+}
